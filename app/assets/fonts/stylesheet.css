@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Berthold Akzidenz Grotesk BE';
+    src: url('AkzidenzGroteskBE-LightEx.eot');
+    src: url('AkzidenzGroteskBE-LightEx.eot?#iefix') format('embedded-opentype'),
+        url('AkzidenzGroteskBE-LightEx.woff2') format('woff2'),
+        url('AkzidenzGroteskBE-LightEx.woff') format('woff'),
+        url('AkzidenzGroteskBE-LightEx.ttf') format('truetype'),
+        url('AkzidenzGroteskBE-LightEx.svg#AkzidenzGroteskBE-LightEx') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+

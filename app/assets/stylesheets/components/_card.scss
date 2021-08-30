@@ -1,0 +1,44 @@
+.cards {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 5px;
+}
+
+.card {
+	height: 400px;
+	display: block;
+	overflow: hidden;
+}
+
+.background {
+	height: 100%;
+	// filter: blur(0px);
+	transform: scale(1);
+	transition: all 0.1s ease-in-out;
+	// transition: filter 1s ease-in-out;
+}
+
+.card:hover .background {
+	// filter: blur(10px);
+	transform: scale(1.01);
+
+}
+
+.card-info {
+	color: white;
+	font-family: $my-font;
+	text-transform: uppercase;
+	position: absolute;
+	top: 0;
+	    height: 100%;
+	    padding: 30px;
+	    backdrop-filter: blur(0px);
+	    // display: none;
+	    transition: backdrop-filter 1s ease-in;
+}
+
+.card:hover .card-info {
+	// filter: blur(10px);
+	backdrop-filter: blur(2px);
+	display: block;
+}

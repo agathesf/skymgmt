@@ -1,0 +1,21 @@
+<h1>models</h1>
+
+<div class="cards">
+	<% @models.each do |model| %>
+	  <%= link_to model_path(model) do %>
+	    <div class="card">
+
+	    	<% 
+	    		random_bg = ["https://booker-theface.s3.amazonaws.com/library/1513/9B-fIatLVWPc13HqnW83_M.JPG", "https://booker-theface.s3.amazonaws.com/library/1513/20201124_17302983.jpg", "https://booker-theface.s3.amazonaws.com/library/1513/20201124_173653205.jpg", "https://booker-theface.s3.amazonaws.com/library/1077/20190509_16022915.jpg", "https://booker-theface.s3.amazonaws.com/library/1077/20190509_16024586.jpg", "https://booker-theface.s3.amazonaws.com/library/422/20190506_171237304.jpg", "https://booker-theface.s3.amazonaws.com/library/422/20190506_174339222.jpg", "https://booker-theface.s3.amazonaws.com/library/1232/20190506_161736365.jpg", "https://booker-theface.s3.amazonaws.com/library/1232/20190506_161947968.jpg"]
+	    	%>
+
+	    	<div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= random_bg.sample %>); background-size: cover;">
+		    	<div class="card-info">
+		        <p> <%= model.first_name %></p>
+		        <p>H 178 cm C 86 cm W 61 cm H 90 cm F 39 1/2 H Brun E Gris-Bleu</p>
+		        </div>
+	        </div>
+	    </div>
+	  <% end %>
+	<% end %>
+</div>

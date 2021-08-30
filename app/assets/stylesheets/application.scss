@@ -11,3 +11,13 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+html, h1, h2, p, a {
+	cursor: none;
+	font-weight: 300;
+}
+
+body {
+	background-color: lightgray;
+	padding: 20px;
+}
