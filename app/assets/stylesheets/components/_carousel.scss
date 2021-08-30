@@ -1,0 +1,22 @@
+.inline-show {
+	display: inline-flex;
+	font-family: $my-font;
+	font-size: 12px;
+	text-transform: uppercase;
+}
+
+.inline-show img {
+	max-height: 90vh;
+	padding: 0 5px;
+}
+
+.show-text {
+	padding: 100px 0px 0px 200px;
+	width: 700px;
+}
+
+.carousel {
+	width: 480px;
+    height: 93vh;
+    margin: 0 5px;
+}

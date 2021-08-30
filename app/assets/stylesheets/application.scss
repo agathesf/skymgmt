@@ -19,5 +19,30 @@ html, h1, h2, p, a {
 
 body {
 	background-color: lightgray;
-	padding: 20px;
+}
+
+p {
+	margin-bottom: 0px;
+}
+
+$a-tags: 'a, a:active, a:hover, a:visited';
+$a-tags-hover: 'a:active, a:hover';
+ 
+
+
+a {
+	text-decoration: none !important;
+	color: white;
+	&:hover {
+		text-decoration: none !important;
+		color: white;
+	}
+	&:visited {
+		text-decoration: none !important;	
+		color: white;
+	}
+	&:active {
+		text-decoration: none !important;	
+		color: white;	
+	}
 }

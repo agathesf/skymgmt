@@ -5,7 +5,7 @@
 }
 
 .card {
-	height: 400px;
+	height: 600px;
 	display: block;
 	overflow: hidden;
 }
@@ -20,25 +20,55 @@
 
 .card:hover .background {
 	// filter: blur(10px);
-	transform: scale(1.01);
+	transform: scale(1);
 
 }
 
 .card-info {
-	color: white;
-	font-family: $my-font;
+	color: transparent;
+	height: 100%;
+	padding: 30px;
+	backdrop-filter: blur(0px);
+	transition: all 0.3s ease-in-out;
+	text-align: center;
+		    display: grid;
+    grid-template-rows: .13fr .9fr .09fr;
+}
+
+.card-info p {
+		font-family: $my-font;
 	text-transform: uppercase;
-	position: absolute;
-	top: 0;
-	    height: 100%;
-	    padding: 30px;
-	    backdrop-filter: blur(0px);
-	    // display: none;
-	    transition: backdrop-filter 1s ease-in;
+}
+
+.card-info h2 {
+	    padding: 160px 0;
+
 }
 
 .card:hover .card-info {
 	// filter: blur(10px);
-	backdrop-filter: blur(2px);
-	display: block;
+	color: white;
+	backdrop-filter: blur(10px);
+}
+
+.info {
+	font-size: 9px;
+}
+
+///////// RESPONSIVE //////////
+
+@media screen and (min-width: 720px) and (max-width: 1200px) {
+	.cards {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 5px;
+	}
+}
+
+@media screen and (max-width: 720px) {
+	.cards {
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+		grid-gap: 5px;
+	}
 }

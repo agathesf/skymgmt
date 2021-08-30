@@ -12,7 +12,8 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
-  <body>
+  <body style="<%= 'height: 100vh;' if params[:action] == 'show'%>">
+    <%= render 'shared/header' %>
     <%= yield %>
   </body>
 

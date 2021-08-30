@@ -1,0 +1,22 @@
+.wrapper {
+	position: absolute;
+	display: flex;
+	overflow: hidden;
+	font-size: 10px;
+	height: 100vh;
+	width: 100vw;
+	color: black;
+}
+
+.text {
+	font-family: $my-font;
+	white-space: nowrap;
+	animation: scroll 5s infinite linear;
+	line-height: 12px;
+}
+
+@keyframes scroll {
+	100% {
+	transform: translateX(-100%);
+	}
+}
