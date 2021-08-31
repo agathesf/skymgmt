@@ -12,9 +12,11 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
-  <body style="<%= 'height: 100vh;' if params[:action] == 'show'%>">
+  <body style="<%= 'height: 100vh; overflow-y: hidden;' if params[:action] == 'show'%>">
     <%= render 'shared/header' %>
     <%= yield %>
+    <%= render 'shared/footer' %>
+    <%= render 'shared/modal' %>
   </body>
 
   <div class="cursor-dot-outline"></div>

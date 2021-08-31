@@ -3,10 +3,10 @@
 	font-family: $my-font;
 	font-size: 12px;
 	text-transform: uppercase;
+	margin: 45px 10px;
 }
 
 .inline-show img {
-	max-height: 90vh;
 	padding: 0 5px;
 }
 
@@ -16,7 +16,8 @@
 }
 
 .carousel {
-	width: 480px;
-    height: 93vh;
+	width: 550px;
+	max-width: 550px;
+    height: 85vh;
     margin: 0 5px;
 }

@@ -21,14 +21,17 @@ body {
 	background-color: lightgray;
 }
 
+h2 {
+	font-family: $font-logo;
+	letter-spacing: 1px;
+}
+
 p {
 	margin-bottom: 0px;
 }
 
 $a-tags: 'a, a:active, a:hover, a:visited';
 $a-tags-hover: 'a:active, a:hover';
- 
-
 
 a {
 	text-decoration: none !important;
@@ -45,4 +48,22 @@ a {
 		text-decoration: none !important;	
 		color: white;	
 	}
+}
+
+.logo {
+    width: 120px;
+    padding: 12px 0;
+}
+
+.back {
+	text-align: end;
+    position: fixed;
+    right: 10px;
+    z-index: 100;
+}
+
+.back a {
+	color: black;
+	font-family: $my-font;
+	font-size: 30px;
 }

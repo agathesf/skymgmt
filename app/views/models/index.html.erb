@@ -1,7 +1,17 @@
 <div class="container">
-
-	<h1>models</h1>
-
+	<div class="navbar">
+		<%= image_tag "logo.svg", alt: "skymgmt logo", class: "logo"%>
+		<div class="menu d-flex">
+			<div class="trigger mx-2">
+				<p class="menu-btn modal-btn" data-toggle="modal" data-target="#aboutModalCenter">about</p>
+				<p class="menu-btn modal-btn" data-toggle="modal" data-target="#aboutModalCenter">index</p>
+			</div>
+			<div class="language">
+				<p class="menu-btn">fr</p>
+				<p class="menu-btn">en</p>
+			</div>
+		</div>
+	</div>
 	<div class="cards">
 		<% @models.each do |model| %>
 		  <%= link_to model_path(model) do %>
@@ -42,5 +52,5 @@
 		  <% end %>
 		<% end %>
 	</div>
-	
+
 </div>

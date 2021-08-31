@@ -1,12 +1,25 @@
-.navbar-lewagon {
-  justify-content: space-between;
-  background: white;
+// .navbar-lewagon {
+//   justify-content: space-between;
+//   background: white;
+// }
+
+// .navbar-lewagon .navbar-collapse {
+//   flex-grow: 0;
+// }
+
+// .navbar-lewagon .navbar-brand img {
+//   width: 40px;
+// }
+
+.menu {
+	font-family: $my-font;
+	text-transform: uppercase;
+	font-size: 12px;
+	text-align: end;
+	opacity: 1;
+	transition: opacity 0.3s ease-in;
 }
 
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
+.menu-btn:hover {
+	opacity: 0.5 !important;
 }

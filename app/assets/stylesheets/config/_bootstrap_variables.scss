@@ -28,3 +28,35 @@ $border-radius-sm: 2px;
 
 $card-border-radius: 0px !default;
 $card-border-width: 0px !default;
+
+//CONTAINER//
+
+$container-max-widths: (
+  sm: 100vw,
+  md: 100vw,
+  lg: 100vw,
+  xl: 100vw,
+  xxl: 100vw
+) !default;
+
+.container {
+	padding: 20px;
+}
+
+//NAVBAR//
+
+$navbar-padding-y:  0px !default;
+$navbar-padding-x:  0px !default;
+
+//MODAL//
+
+$modal-backdrop-bg: transparent;
+$modal-backdrop-opacity: 0;
+
+$modal-fade-transform: translate(0, 150px);
+$modal-show-transform: none;
+$modal-transition: transform .3s ease-out;
+
+
+
+

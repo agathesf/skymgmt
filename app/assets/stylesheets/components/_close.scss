@@ -1,0 +1,43 @@
+// @import "bourbon";
+
+.close{
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  overflow: hidden;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #000;
+  }
+  &::before {
+    // @include transform(rotate(45deg));
+    transform: rotate(40deg);
+    transition: transform .3s ease-in-out;
+  }
+  &::after {
+    // @include transform(rotate(-45deg));
+    transform: rotate(-40deg);
+    transition: transform .3s ease-in-out;
+  }
+  &:hover::before {
+    // @include transform(rotate(45deg));
+    transform: rotate(-40deg);
+  }
+  &:hover::after {
+    // @include transform(rotate(-45deg));
+    transform: rotate(40deg);
+  }
+  &.hairline {
+    &::before, &::after {
+      height: 1px;
+    }
+  }
+}
