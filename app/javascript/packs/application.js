@@ -24,9 +24,19 @@ import "bootstrap";
 // Internal imports, e.g:
 // import { initSelect2 } from '../components/init_select2';
 import { cursorRound } from '../components/cursor';
+import { closeModal } from '../components/close';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   cursorRound();
+  closeModal();
+});
+
+var about = document.getElementById('about');
+
+document.addEventListener("click", () => {
+  // Call your functions here, e.g:
+  // initSelect2();
+  closeModal();
 });
