@@ -18,7 +18,7 @@ html, h1, h2, p, a {
 }
 
 body {
-	background-color: lightgray;
+	background-color: $light-gray;
 }
 
 h2 {
@@ -48,11 +48,6 @@ a {
 		text-decoration: none !important;	
 		color: white;	
 	}
-}
-
-.logo {
-    width: 120px;
-    padding: 12px 0;
 }
 
 .back {

@@ -11,6 +11,11 @@
 //   width: 40px;
 // }
 
+.logo {
+    width: 120px;
+        padding: 6px 0 16px 0;
+}
+
 .menu {
 	font-family: $my-font;
 	text-transform: uppercase;
@@ -18,6 +23,10 @@
 	text-align: end;
 	opacity: 1;
 	transition: opacity 0.3s ease-in;
+}
+
+.menu-btn {
+	line-height: 1.2;
 }
 
 .menu-btn:hover {
