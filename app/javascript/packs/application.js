@@ -34,8 +34,18 @@ document.addEventListener('turbolinks:load', () => {
 });
 
 var about = document.getElementById('about');
+var about_modal = document.getElementById('aboutModalCenter');;
 
-document.addEventListener("click", () => {
+
+//IN
+about.addEventListener("click", () => {
+  // Call your functions here, e.g:
+  // initSelect2();
+  closeModal();
+});
+
+//OUT
+about_modal.addEventListener("click", () => {
   // Call your functions here, e.g:
   // initSelect2();
   closeModal();
