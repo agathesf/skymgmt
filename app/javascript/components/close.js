@@ -14,7 +14,7 @@ const closeModal = () => {
             about.innerHTML = about.innerHTML.replace("close","about");
             console.log("about");
         };
-    }, 300);
+    }, 180);
 
 }
 
