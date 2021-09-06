@@ -27,6 +27,14 @@
 $modal-backdrop-bg: transparent;
 $modal-backdrop-opacity: 0.1;
 
+.modal-content {
+	    background-color: $light-gray;
+	    display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    grid-gap: 50px;
+	        border: 0px solid rgba(0, 0, 0, 0.2);
+	        text-align: justify;
+}
 
 .close-btn {
 	position: absolute;
@@ -37,3 +45,36 @@ $modal-backdrop-opacity: 0.1;
 	font-size: 12px;
 	text-align: end;
 }
+
+.modal-backdrop {
+    position: inherit;
+}
+
+.modal-dialog p {
+	line-height: 1.5;
+}
+
+.modal-dialog a {
+	text-align: end;
+}
+
+.modal-dialog p, a {
+	color: black !important;
+	font-family: $my-font;
+	font-size: 11px;
+	text-transform: uppercase;
+}
+
+.ext-link {
+	display: flex;
+    flex-direction: column;
+}
+
+.asset {
+	display: grid;
+	grid-template-columns: 1fr 5fr;
+	grid-gap: 5px;
+}
+
+
+

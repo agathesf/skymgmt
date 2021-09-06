@@ -21,3 +21,17 @@
     height: 85vh;
     margin: 0 5px;
 }
+
+///////// RESPONSIVE //////////
+
+@media screen and (min-width: 720px) and (max-width: 1200px) {
+
+
+}
+
+@media screen and (max-width: 720px) {
+	.show-text {
+	    padding: 100px 0px 0px 0px;
+	    width: 350px;
+	}
+}
