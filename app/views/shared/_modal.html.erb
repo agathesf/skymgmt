@@ -28,3 +28,62 @@
 	</div>
   </div>
 </div>
+
+<div class="modal fade" id="indexModalCenter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+  	<div class="inner">
+
+	  	<div class="modal-content-index pb-2" style="text-transform: lowercase;">
+	  		<p class="c1">new faces</p>
+	  		<p class="c2 lowercase">name</p>
+	  		<p class="c3 lowercase">gender</p>
+	  		<p class="c4 lowercase">age</p>
+	  		<p class="c5 lowercase">based in</p>
+	  		<p class="c6 lowercase">type</p>
+	  	</div>
+	  	<div class="mb-5">
+		  	<% @models.each do |model| %>
+		  		<% if model.category == "new faces" %>
+			  		<div class="modal-content-index py-2">
+			  			<p class="c1"></p>
+			  			<p class="c2"> <%= model.first_name%> <%= model.last_name %></p>
+			  			<p class="c3"> <%= model.gender %></p>
+			  			<p class="c4"> <%= model.age %></p>
+			  			<p class="c5"> <%= model.based_in %> </p>
+			  			<p class="c6"> <%= model.role %> </p>
+			  		</div>
+			  	<% end %>
+		  	<% end %>
+	  	</div>
+
+	  	<div class="modal-content-index pb-2">
+	  		<p class="c1">talents</p>
+	  		<p class="c2 lowercase">name</p>
+	  		<p class="c3 lowercase">gender</p>
+	  		<p class="c4 lowercase">age</p>
+	  		<p class="c5 lowercase">based in</p>
+	  		<p class="c6 lowercase">type</p>
+		</div>
+
+		<div class="mb-5">
+
+		  	<% @models.each do |model| %>
+
+	  	  		<% if model.category == "talents" %>
+	  		  		<div class="modal-content-index py-2">
+	  		  			<p class="c1"></p>
+			  			<p class="c2"> <%= model.first_name%> <%= model.last_name %></p>
+			  			<p class="c3"> <%= model.gender %></p>
+			  			<p class="c4"> <%= model.age %></p>
+			  			<p class="c5"> <%= model.based_in %> </p>
+			  			<p class="c6"> <%= model.role %> </p>
+	  		  		</div>
+		  	  	<% end %>
+
+			<% end %>
+
+		</div>
+
+	</div>
+  </div>
+</div>
