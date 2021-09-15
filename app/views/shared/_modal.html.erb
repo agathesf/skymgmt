@@ -25,7 +25,12 @@
 				<p class="py-2">SCOUTING</p>
 				<p class="py-2">SKYMANAGEMENT EST AUSSI SPÉCIALISÉE DANS LA RECHERCHE ET LE PLACEMENT DE MODÈLES. LE «SCOUTING» CONSISTE À TROUVER LES FUTURS VISAGES DES AGENCES DE MANNEQUINS. NOUS SOMMES DONC UN ACTEUR PRIVILÉGIÉ ET STRATÉGIQUE POUR LES AGENCES FRANÇAISES ET INTERNATIONALES. APRÈS LES AVOIR REPERÉS, NOUS ASSURONS LE PLACEMENT, LE SUIVI ET LA PROMOTION DES MANNEQUINS.</p>
 			</div>
-			<%= link_to "I'M A TEAM MEMBER", new_user_session_path, class: "login", style: "position: absolute; bottom: 0px; right:0px; " %>
+
+			<% if user_signed_in? %>
+				<%= link_to "QUIT EDITOR", destroy_user_session_path, class: "login", style: "position: absolute; bottom: 0px; right:0px; " %>
+			<% else %>
+				<%= link_to "I'M A TEAM MEMBER", new_user_session_path, class: "login", style: "position: absolute; bottom: 20px; right:0px; " %>
+			<% end %>
 		</div>
 	</div>
   </div>

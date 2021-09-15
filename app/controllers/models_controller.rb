@@ -7,6 +7,7 @@ class ModelsController < ApplicationController
 	  @model = Model.find(params[:id])
 	end
 
+
 	def new
 	  @model = Model.new
 	end

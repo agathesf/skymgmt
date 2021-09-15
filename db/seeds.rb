@@ -9,6 +9,7 @@
 require 'faker'
 
 Model.destroy_all
+User.destroy_all
 
 10.times do
 
@@ -51,3 +52,7 @@ Model.destroy_all
 
 
 end
+
+User.create!(email: "test.123@example.com", password: "Test.123")
+
+
