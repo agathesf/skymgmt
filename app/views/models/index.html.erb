@@ -21,29 +21,25 @@
 		    		random_bg = ["https://booker-theface.s3.amazonaws.com/library/1513/9B-fIatLVWPc13HqnW83_M.JPG", "https://booker-theface.s3.amazonaws.com/library/1513/20201124_17302983.jpg", "https://booker-theface.s3.amazonaws.com/library/1513/20201124_173653205.jpg", "https://booker-theface.s3.amazonaws.com/library/1077/20190509_16022915.jpg", "https://booker-theface.s3.amazonaws.com/library/1077/20190509_16024586.jpg", "https://booker-theface.s3.amazonaws.com/library/422/20190506_171237304.jpg", "https://booker-theface.s3.amazonaws.com/library/422/20190506_174339222.jpg", "https://booker-theface.s3.amazonaws.com/library/1232/20190506_161736365.jpg", "https://booker-theface.s3.amazonaws.com/library/1232/20190506_161947968.jpg"]
 		    	%>
 
-		    	<% 
-		    		random_category = ["new faces", "talents"]
-		    	%>
-
 		    	<div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(<%= random_bg.sample %>); background-size: cover; background-position: center;">
 			    	<div class="card-info">
 			    		<div class="top py-1">
 				    		<div class="info d-flex justify-content-center">
-				    			<p class="px-3"><%= random_category.sample %></p>
+				    			<p class="px-3"><%= model.category %></p>
 				    		</div>
 			    		</div>
 				        <h2> <%= model.first_name%> <%= model.last_name %></h2>
 				        <div class="bottom">
 					        <div class="info d-flex justify-content-center">
-					        	<p class="px-3">H 178 cm</p>
-					        	<p class="px-3">C 86 cm</p>
-					        	<p class="px-3">W 61 cm</p>
-					        	<p class="px-3">H 90 cm</p>
+					        	<p class="px-3">H <%= model.height %> cm</p>
+					        	<p class="px-3">C <%= model.chest %> cm</p>
+					        	<p class="px-3">W <%= model.waist %> cm</p>
+					        	<p class="px-3">H <%= model.hips %> cm</p>
 					        </div>
 					        <div class="info d-flex justify-content-center">
-					        	<p class="px-3">F 39 1/2</p>
-					        	<p class="px-3">H Brun</p>
-					        	<p class="px-3">E Gris-Bleu</p>
+					        	<p class="px-3">F <%= model.foot %></p>
+					        	<p class="px-3">H <%= model.hair %></p>
+					        	<p class="px-3">E <%= model.eye %></p>
 					        </div>	
 				        </div>
 			        </div>
