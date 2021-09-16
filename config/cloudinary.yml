@@ -2,8 +2,8 @@ development:
   cloud_name: dowlbltsc
   api_key: '515459721288771'
   api_secret: o5W8OFmNs816Pulwjr61yH2Q7Jw
-  enhance_image_tag: true
-  static_file_support: false
+#   enhance_image_tag: true
+#   static_file_support: true
 production:
   cloud_name: dowlbltsc
   api_key: '515459721288771'

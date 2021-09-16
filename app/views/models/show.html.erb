@@ -46,7 +46,7 @@
 		%>
 
 		<% @model.photos.each do |photo| %>
-		  		<%= cl_image_tag @model.photos.first.key, style: "height: 85vh" %>
+		  		<%= cl_image_tag photo.key, style: "height: 85vh" %>
 		<% end %>
 		<div> </div>
 
