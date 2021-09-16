@@ -29,12 +29,7 @@
 
 		    	<%= link_to model_path(model) do %>
 
-			    	<div class="background">	
-			    		<% if model.photos.first != nil %>
-			    			<%= cl_image_tag model.photos.first.key, class: "background" %>
-			    		<% else %>
-			    			<%= image_tag random_bg.sample, alt: "alttext" %>
-			    		<% end %>
+			    	<div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= cl_image_path model.photos.first.key if model.photos.first != nil %>'); background-position: center; background-size: cover">	
 
 				    	<div class="card-info">
 
