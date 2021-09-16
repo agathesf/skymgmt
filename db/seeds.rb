@@ -17,7 +17,7 @@ User.destroy_all
   last_name = Faker::Name.last_name
   description = "jeune influenceur de 20 ans. depuis de nombreuses années désormais, sa manière d’évoquer ses doutes, ses ambitions avec toujours beaucoup d’humour mais aussi une véritable poésie lui a permis de réunir une communauté fidèle et engagée."
   age = rand(20..27)
-  gender = ["M", "F"].sample
+  gender = ["male", "female"].sample
   type = ["Model", "Actor", "Rapper"].sample
   category = ["new faces", "talents"].sample
   based_in = Faker::Address.city

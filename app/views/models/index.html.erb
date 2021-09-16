@@ -21,11 +21,11 @@
 		    		random_bg = ["https://booker-theface.s3.amazonaws.com/library/1513/9B-fIatLVWPc13HqnW83_M.JPG", "https://booker-theface.s3.amazonaws.com/library/1513/20201124_17302983.jpg", "https://booker-theface.s3.amazonaws.com/library/1513/20201124_173653205.jpg", "https://booker-theface.s3.amazonaws.com/library/1077/20190509_16022915.jpg", "https://booker-theface.s3.amazonaws.com/library/1077/20190509_16024586.jpg", "https://booker-theface.s3.amazonaws.com/library/422/20190506_171237304.jpg", "https://booker-theface.s3.amazonaws.com/library/422/20190506_174339222.jpg", "https://booker-theface.s3.amazonaws.com/library/1232/20190506_161736365.jpg", "https://booker-theface.s3.amazonaws.com/library/1232/20190506_161947968.jpg"]
 		    	%>
 
-		    	    	<% if user_signed_in? %>
-		    		    	<%= link_to destroy_path(model), style: "position: absolute; right: 0;", method: :delete, data: { confirm: "Are you sure?" } do %>
-		    		    		<span class="delete hairline"></span>
-		    		    	<% end %>
-		    	    	<% end %>
+    	    	<% if user_signed_in? %>
+    		    	<%= link_to destroy_path(model), style: "position: absolute; right: 0;", method: :delete, data: { confirm: "Are you sure?" } do %>
+    		    		<span class="delete hairline"></span>
+    		    	<% end %>
+    	    	<% end %>
 
 		    	<%= link_to model_path(model) do %>
 
@@ -40,28 +40,28 @@
 					        <h2> <%= model.first_name%> <%= model.last_name %></h2>
 					        <div class="bottom">
 						        <div class="info d-flex justify-content-center">
-						        	<% if model.height != nil || "" %>
-						        	<p class="px-3">H <%= model.height %> cm</p>
+						        	<% if model.height != "" %>
+						        		<p class="px-3">H <%= model.height %> cm</p>
 						        	<% end %>
-						        	<% if model.chest != nil %>
-						        	<p class="px-3">C <%= model.chest %> cm</p>
+						        	<% if model.chest != "" %>
+						        		<p class="px-3">C <%= model.chest %> cm</p>
 						        	<% end %>
-						        	<% if model.waist != nil %>
-						        	<p class="px-3">W <%= model.waist %> cm</p>
+						        	<% if model.waist != "" %>
+						        		<p class="px-3">W <%= model.waist %> cm</p>
 						        	<% end %>
-						        	<% if model.hips != nil %>
-						        	<p class="px-3">H <%= model.hips %> cm</p>
+						        	<% if model.hips != "" %>
+						        		<p class="px-3">H <%= model.hips %> cm</p>
 						        	<% end %>
 						        </div>
 						        <div class="info d-flex justify-content-center">
-						        	<% if model.foot != nil %>
-						        	<p class="px-3">F <%= model.foot %></p>
+						        	<% if model.foot != "" %>
+						        		<p class="px-3">F <%= model.foot %></p>
 						        	<% end %>
-						        	<% if model.hair != nil %>
-						        	<p class="px-3">H <%= model.hair %></p>
+						        	<% if model.hair != "" %>
+						        		<p class="px-3">H <%= model.hair %></p>
 						        	<% end %>
-						        	<% if model.eye != nil %>
-						        	<p class="px-3">E <%= model.eye %></p>
+						        	<% if model.eye != "" %>
+						        		<p class="px-3">E <%= model.eye %></p>
 						        	<% end %>
 						        </div>	
 					        </div>
@@ -72,11 +72,13 @@
 		    </div>
 		<% end %>
 
-		<div class="card last-card">
-				<%= link_to new_model_path do %>
-				  <span class="add hairline"></span>
-				<% end %>
-		</div>
+		<% if user_signed_in? %>
+			<div class="card last-card">
+					<%= link_to new_model_path do %>
+					  <span class="add hairline"></span>
+					<% end %>
+			</div>
+		<% end %>
 	</div>
 
 </div>

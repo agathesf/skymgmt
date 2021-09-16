@@ -122,6 +122,13 @@ input {
 	float: right;
 }
 
+.validate-model-btn:hover {
+	color: black;
+	background-color: $light-gray;
+	border-bottom: 1px solid black;
+}
+
+
 ///////// RESPONSIVE //////////
 
 @media screen and (min-width: 720px) and (max-width: 1200px) {

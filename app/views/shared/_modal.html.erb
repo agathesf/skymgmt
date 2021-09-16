@@ -54,7 +54,10 @@
 			  		<div class="modal-content-index py-2">
 			  			<p class="c1"></p>
 			  			<p class="c2"> <%= model.first_name%> <%= model.last_name %></p>
-			  			<p class="c3"> <%= model.gender %></p>
+			  			<p class="c3"> 
+			  				<%= "F" if model.gender == "female" %> 
+			  				<%= "M" if model.gender == "male" %>
+			  			</p>
 			  			<p class="c4"> <%= model.age %></p>
 			  			<p class="c5"> <%= model.based_in %> </p>
 			  			<p class="c6"> <%= model.role %> </p>
@@ -80,7 +83,10 @@
 	  		  		<div class="modal-content-index py-2">
 	  		  			<p class="c1"></p>
 			  			<p class="c2"> <%= model.first_name%> <%= model.last_name %></p>
-			  			<p class="c3"> <%= model.gender %></p>
+			  			<p class="c3"> 
+			  				<%= "F" if model.gender == "female" %> 
+			  				<%= "M" if model.gender == "male" %>
+			  			</p>
 			  			<p class="c4"> <%= model.age %></p>
 			  			<p class="c5"> <%= model.based_in %> </p>
 			  			<p class="c6"> <%= model.role %> </p>

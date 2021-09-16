@@ -13,15 +13,29 @@
 				<p class="px-3"> <%= @model.description %> </p>
 		        <div class="bottom my-4">
 			        <div class="info-show d-flex justify-content-left">
-			        	<p class="px-3">H <%= @model.height %> cm</p>
-			        	<p class="px-3">C <%= @model.chest %> cm</p>
-			        	<p class="px-3">W <%= @model.waist %> cm</p>
-			        	<p class="px-3">H <%= @model.hips %> cm</p>
+			        	<% if @model.height != "" %>
+			        		<p class="px-3">H <%= @model.height %> cm</p>
+			        	<% end %>
+			        	<% if @model.chest != "" %>
+			        		<p class="px-3">C <%= @model.chest %> cm</p>
+			        	<% end %>
+			        	<% if @model.waist != "" %>
+			        		<p class="px-3">W <%= @model.waist %> cm</p>
+			        	<% end %>
+			        	<% if @model.hips != "" %>
+			        		<p class="px-3">H <%= @model.hips %> cm</p>
+			        	<% end %>
 			        </div>
 			        <div class="info-show d-flex justify-content-left">
-			        	<p class="px-3">F <%= @model.foot %></p>
-			        	<p class="px-3">H <%= @model.hair %></p>
-			        	<p class="px-3">E <%= @model.eye %></p>
+			        	<% if @model.foot != "" %>
+			        		<p class="px-3">F <%= @model.foot %></p>
+			        	<% end %>
+			        	<% if @model.hair != "" %>
+			        		<p class="px-3">H <%= @model.hair %></p>
+			        	<% end %>
+			        	<% if @model.eye != "" %>
+			        		<p class="px-3">E <%= @model.eye %></p>
+			        	<% end %>
 			        </div>	
 		        </div>
 		     </div>
