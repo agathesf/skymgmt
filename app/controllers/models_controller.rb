@@ -30,6 +30,6 @@ class ModelsController < ApplicationController
 	private
 
 	def model_params
-	  params.require(:model).permit(:first_name, :last_name, :description, :age, :gender, :role, :category, :based_in, :height, :chest, :waist, :hips, :foot, :hair, :eye, :email, :instagram)
+	  params.require(:model).permit(:first_name, :last_name, :description, :age, :gender, :role, :category, :based_in, :height, :chest, :waist, :hips, :foot, :hair, :eye, :email, :instagram, photos: [])
 	end
 end
