@@ -1,1 +1,24 @@
-coucou
+
+<%= simple_form_for @model do |f| %>
+  <%= f.input :first_name %>
+  <%= f.input :last_name %>
+  <%= f.input :description %>
+  <%= f.input :age %>
+  <%= f.input :gender %>
+  <%= f.input :role %>
+  <%= f.input :category %>
+  <%= f.input :based_in %>
+  <%= f.input :height %>
+  <%= f.input :chest %>
+  <%= f.input :waist %>
+  <%= f.input :hips %>
+  <%= f.input :foot %>
+  <%= f.input :hair %>
+  <%= f.input :eye %>
+  <%= f.input :email %>
+  <%= f.input :instagram %>
+
+  <%= f.button :submit %>
+
+
+<% end %>
