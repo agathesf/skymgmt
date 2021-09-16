@@ -4,7 +4,7 @@
 		<%= link_to models_path do %>
 			<p><i class="fas fa-chevron-left pr-2"></i>annuler</p>
 		<% end %>
-		
+
 
 		<h3>About</h3>
 		<%= f.input :first_name, placeholder: 'first name', label:false %>
@@ -77,6 +77,7 @@
 		<h3>Contact</h3>
 		<%= f.input :email, placeholder: 'email', label:false %>
 		<%= f.input :instagram, placeholder: 'instagram link', label:false %>
+		<%= f.file_field :photos, direct_upload: true %>
 
 	  <%= f.button :submit, value: "valider", class: "validate-model-btn" %>
 	</div>
