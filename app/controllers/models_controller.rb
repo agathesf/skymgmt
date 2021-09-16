@@ -13,7 +13,7 @@ class ModelsController < ApplicationController
 	end
 
 	def create
-	  @model = Model.new(cocktail_params)
+	  @model = Model.new(model_params)
 	  if @model.save
 	    redirect_to model_path(@model)
 	  else
@@ -25,5 +25,11 @@ class ModelsController < ApplicationController
 	  @model = Model.find(params[:id])
 	  @model.destroy
 	  redirect_to models_path
+	end
+
+	private
+
+	def model_params
+	  params.require(:model).permit(:first_name, :last_name, :description, :age, :gender, :role, :category, :based_in, :height, :chest, :waist, :hips, :foot, :hair, :eye, :email, :instagram)
 	end
 end
