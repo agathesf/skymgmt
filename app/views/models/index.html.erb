@@ -40,15 +40,29 @@
 					        <h2> <%= model.first_name%> <%= model.last_name %></h2>
 					        <div class="bottom">
 						        <div class="info d-flex justify-content-center">
+						        	<% if model.height != nil || "" %>
 						        	<p class="px-3">H <%= model.height %> cm</p>
+						        	<% end %>
+						        	<% if model.chest != nil %>
 						        	<p class="px-3">C <%= model.chest %> cm</p>
+						        	<% end %>
+						        	<% if model.waist != nil %>
 						        	<p class="px-3">W <%= model.waist %> cm</p>
+						        	<% end %>
+						        	<% if model.hips != nil %>
 						        	<p class="px-3">H <%= model.hips %> cm</p>
+						        	<% end %>
 						        </div>
 						        <div class="info d-flex justify-content-center">
+						        	<% if model.foot != nil %>
 						        	<p class="px-3">F <%= model.foot %></p>
+						        	<% end %>
+						        	<% if model.hair != nil %>
 						        	<p class="px-3">H <%= model.hair %></p>
+						        	<% end %>
+						        	<% if model.eye != nil %>
 						        	<p class="px-3">E <%= model.eye %></p>
+						        	<% end %>
 						        </div>	
 					        </div>
 				        </div>

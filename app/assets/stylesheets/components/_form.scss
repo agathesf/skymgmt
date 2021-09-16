@@ -159,3 +159,14 @@ input {
 	}
 }
 
+.new_user {
+	padding: 90px 500px;
+    &.form-control {
+    	background-color: transparent;
+    }
+    & h3 {
+    	font-family: $font-logo;
+    	    margin-top: 30px;
+    }
+}
+
