@@ -41,10 +41,6 @@
 		     </div>
 		</div>
 
-		<% 
-			random_bg = ["https://booker-theface.s3.amazonaws.com/library/1513/9B-fIatLVWPc13HqnW83_M.JPG", "https://booker-theface.s3.amazonaws.com/library/1513/20201124_17302983.jpg", "https://booker-theface.s3.amazonaws.com/library/1513/20201124_173653205.jpg", "https://booker-theface.s3.amazonaws.com/library/1077/20190509_16022915.jpg", "https://booker-theface.s3.amazonaws.com/library/1077/20190509_16024586.jpg", "https://booker-theface.s3.amazonaws.com/library/422/20190506_171237304.jpg", "https://booker-theface.s3.amazonaws.com/library/422/20190506_174339222.jpg", "https://booker-theface.s3.amazonaws.com/library/1232/20190506_161736365.jpg", "https://booker-theface.s3.amazonaws.com/library/1232/20190506_161947968.jpg"]
-		%>
-
 		<% @model.photos.each do |photo| %>
 		  		<%= cl_image_tag photo.key, style: "height: 85vh" %>
 		<% end %>
