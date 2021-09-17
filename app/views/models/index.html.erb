@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="navbar">
-		<%= image_tag "logo.svg", alt: "skymgmt logo", class: "logo"%>
+		<%#= image_tag "logo.svg", alt: "skymgmt logo", class: "logo"%>
 		<div class="menu d-flex">
 			<div class="trigger mx-2">
 				<p class="menu-btn modal-btn" data-toggle="modal" data-target="#aboutModalCenter" id="about">about</p>
@@ -16,10 +16,6 @@
 
 		<% @models.each do |model| %>
 		    <div class="card">
-
-		    	<% 
-		    		random_bg = ["https://booker-theface.s3.amazonaws.com/library/1513/9B-fIatLVWPc13HqnW83_M.JPG", "https://booker-theface.s3.amazonaws.com/library/1513/20201124_17302983.jpg", "https://booker-theface.s3.amazonaws.com/library/1513/20201124_173653205.jpg", "https://booker-theface.s3.amazonaws.com/library/1077/20190509_16022915.jpg", "https://booker-theface.s3.amazonaws.com/library/1077/20190509_16024586.jpg", "https://booker-theface.s3.amazonaws.com/library/422/20190506_171237304.jpg", "https://booker-theface.s3.amazonaws.com/library/422/20190506_174339222.jpg", "https://booker-theface.s3.amazonaws.com/library/1232/20190506_161736365.jpg", "https://booker-theface.s3.amazonaws.com/library/1232/20190506_161947968.jpg"]
-		    	%>
 
     	    	<% if user_signed_in? %>
     		    	<%= link_to destroy_path(model), style: "position: absolute; right: 0;", method: :delete, data: { confirm: "Are you sure?" } do %>
