@@ -3,7 +3,7 @@
 	font-family: $my-font;
 	font-size: 12px;
 	text-transform: uppercase;
-	margin: 70px 10px;
+	margin: 45px 10px;
 }
 
 .inline-show img {
@@ -13,6 +13,14 @@
 .show-text {
 	padding: 100px 0px 0px 200px;
 	width: 700px;
+	display: grid;
+	grid-template-rows: 1fr 6fr 0fr;
+}
+
+.contact {
+	justify-content: end;
+    display: flex;
+    margin-right: 30px;
 }
 
 .carousel {

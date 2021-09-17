@@ -8,7 +8,7 @@
 			<p class="py-2">we tell stories diffenrently</p>
 			<div class="ext-link py-4">
 				<!-- UPDATE MAILER -->
-				<a class= "login" href="contact@skymgmt.fr">CONTACT@SKYMGMT.FR</a>
+				<a class= "login" href="mailto: contact@skymgmt.fr">CONTACT@SKYMGMT.FR</a>
 				<a class= "login" href="https://instagram.com/skymanagementagency?utm_medium=copy_link">@SKYMANAGEMENT</a>
 			</div>
 			<div class="asset">
@@ -51,8 +51,7 @@
 	  	<div class="mb-5">
 		  	<% @models.each do |model| %>
 		  		<% if model.category == "new faces" %>
-			  		<div class="modal-content-index py-2">
-			  			<p class="c1"></p>
+			  		<div class="modal-content-index-line py-2">
 			  			<p class="c2"> <%= model.first_name%> <%= model.last_name %></p>
 			  			<p class="c3"> 
 			  				<%= "F" if model.gender == "female" %> 
@@ -80,8 +79,7 @@
 		  	<% @models.each do |model| %>
 
 	  	  		<% if model.category == "talents" %>
-	  		  		<div class="modal-content-index py-2">
-	  		  			<p class="c1"></p>
+	  		  		<div class="modal-content-index-line py-2">
 			  			<p class="c2"> <%= model.first_name%> <%= model.last_name %></p>
 			  			<p class="c3"> 
 			  				<%= "F" if model.gender == "female" %> 
