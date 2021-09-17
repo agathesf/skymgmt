@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Akzidenz-Grotesk BQ';
+    src: url('AkzidenzGroteskBQ-LigExt.eot');
+    src: url('AkzidenzGroteskBQ-LigExt.eot?#iefix') format('embedded-opentype'),
+        url('AkzidenzGroteskBQ-LigExt.woff2') format('woff2'),
+        url('AkzidenzGroteskBQ-LigExt.woff') format('woff'),
+        url('AkzidenzGroteskBQ-LigExt.ttf') format('truetype'),
+        url('AkzidenzGroteskBQ-LigExt.svg#AkzidenzGroteskBQ-LigExt') format('svg');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
