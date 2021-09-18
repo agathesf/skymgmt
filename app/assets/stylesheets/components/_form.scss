@@ -177,3 +177,19 @@ input {
     }
 }
 
+input#file-upload-button {
+	background-color: blue;
+	font-size: 30px;
+}
+
+.preview ul {
+	list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+li > img {
+	padding-right: 10px;
+	object-fit: contain;
+    max-height: 90px;
+}

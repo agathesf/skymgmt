@@ -26,11 +26,13 @@ import "bootstrap";
 import { cursorRound } from '../components/cursor';
 import { textLinkModalAbout } from '../components/close';
 import { textLinkModalIndex } from '../components/close';
+import { previewImg } from '../components/preview';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
   cursorRound();
+  previewImg();
   textLinkModalAbout();
   textLinkModalIndex();
 });

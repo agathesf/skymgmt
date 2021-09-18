@@ -77,9 +77,14 @@
 		<h3>Contact</h3>
 		<%= f.input :email, placeholder: 'email', label:false %>
 		<%= f.input :instagram, placeholder: 'instagram link', label:false %>
-		<%= f.input :photos, as: :file, input_html: { multiple: true } %>
 
-	  <%= f.button :submit, value: "valider", class: "validate-model-btn" %>
+		<h3>Photos</h3>
+
+		<%= f.input :photos, as: :file, input_html: { multiple: true }, label:false %>
+		<div class="preview">
+		 </div>
+
+	  	<%= f.button :submit, value: "valider", class: "validate-model-btn" %>
 	</div>
 
 <% end %>
