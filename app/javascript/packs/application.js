@@ -31,8 +31,15 @@ import { previewImg } from '../components/preview';
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
   // initSelect2();
-  cursorRound();
-  previewImg();
-  textLinkModalAbout();
-  textLinkModalIndex();
+  var currentUrl = window.location.href;
+
+  if (currentUrl.includes("models/new")) {
+  	cursorRound();
+  	previewImg();
+  } else {
+  	cursorRound();
+  	textLinkModalAbout();
+  	textLinkModalIndex();
+  }
+
 });
