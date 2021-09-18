@@ -182,6 +182,10 @@ input#file-upload-button {
 	font-size: 30px;
 }
 
+.preview {
+	overflow: scroll !important;
+}
+
 .preview ul {
 	list-style: none;
     display: flex;
