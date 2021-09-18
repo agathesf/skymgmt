@@ -8,8 +8,8 @@
 	<div class="inline-show">
 
 		<div class="show-text">
-			<p> <%= @model.first_name%> <%= @model.last_name %></p>
-			<div class="ml-5">
+			<p class="model-name"> <%= @model.first_name%> <%= @model.last_name %></p>
+			<div class="mt-5">
 				<p class="px-3"> <%= @model.description %> </p>
 		        <div class="bottom my-4">
 			        <div class="info-show d-flex justify-content-left">
@@ -40,7 +40,7 @@
 		        </div>
 		     </div>
 
-		     <div class="contact">
+		     <div class="contact px-3">
 		     	<p></p>
 		     	<a href = "mailto: <%= @model.email %>" class="login">MAIL</a>
 		     	<a href="<%= @model.instagram %>" class= "login ml-3">INSTAGRAM</a>
