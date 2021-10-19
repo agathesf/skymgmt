@@ -8,12 +8,13 @@
 				<p class="menu-btn modal-btn" data-toggle="modal" data-target="#indexModalCenter" id="index">index</p>
 			</div>
 			<div class="language">
-				<p class="menu-btn">fr</p>
-				<p class="menu-btn">en</p>
+				<p class="menu-btn"><%= link_to 'fr', root_path(locale: :fr) %></p>
+				<p class="menu-btn"><%= link_to 'en', root_path(locale: :en) %></p>
 			</div>
 		</div>
 	</div>
 	<div class="cards">
+		<p> <%= t 'management' %> </p>
 
 		<% @models.each do |model| %>
 		    <div class="card">
@@ -24,7 +25,7 @@
     		    	<% end %>
     	    	<% end %>
 
-		    	<%= link_to model_path(model) do %>
+		    	<%= link_to model_path(model, locale: :fr) do %>
 
 			    	<div class="background" style="background-image: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url('<%= cl_image_path model.photos.first.key if model.photos.first != nil %>'); background-position: center; background-size: cover">	
 
@@ -65,6 +66,7 @@
 					        </div>
 				        </div>
 			        </div>
+
 			    <% end %>
 
 		    </div>

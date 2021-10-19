@@ -13,6 +13,11 @@ module Skymgmt
       generate.helper false
       generate.test_framework :test_unit, fixture: false
     end
+
+    config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
+    config.i18n.default_locale = :fr
+    config.i18n.available_locales = [:fr, :en]
+
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.1
 
