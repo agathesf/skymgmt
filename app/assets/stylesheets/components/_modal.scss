@@ -2,6 +2,7 @@
 	bottom: 0 ;
 	top: auto;
 	height: 90%;
+	background-color: $light-gray;
 }
 
 .fade.modal {
@@ -34,6 +35,8 @@ $modal-backdrop-opacity: 0.1;
 	    grid-gap: 50px;
 	        border: 0px solid rgba(0, 0, 0, 0.2);
 	        text-align: justify;
+	        height: 100%;
+    overflow: scroll;
 }
 
 .close-btn {
@@ -137,14 +140,15 @@ $modal-backdrop-opacity: 0.1;
 	    grid-template-columns: 1fr;
 	}
 	.modal-content-index {
-		grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
-		& .c1, .c5 {
+		grid-template-columns: 3fr 2fr 1fr;
+		& .c1, .c3, .c4 {
 			display:none;
 		}
 	}
 	.modal-content-index-line {
+		grid-template-columns: 3fr 2fr 1fr;
 		margin-left: 0px; 
-		& .c1, .c5 {
+		& .c1, .c3, .c4 {
 			display:none;
 		}
 	}

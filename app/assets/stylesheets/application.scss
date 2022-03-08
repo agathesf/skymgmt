@@ -21,6 +21,10 @@ body {
 	background-color: $light-gray;
 }
 
+body::-webkit-scrollbar, div::-webkit-scrollbar {
+  display: none;
+}
+
 h2 {
 	font-family: $font-logo;
 	letter-spacing: 1px;
