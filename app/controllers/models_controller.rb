@@ -21,6 +21,16 @@ class ModelsController < ApplicationController
 	  end
 	end
 
+	def edit
+	  @model = Model.find(params[:id])
+	end
+
+	def update
+	  @model = Model.find(params[:id])
+	  @model.update(model_params)
+	  redirect_to model_path(@model)
+	end
+
 	def destroy
 	  @model = Model.find(params[:id])
 	  @model.destroy
