@@ -27,3 +27,13 @@
     background-color: rgba(71, 102, 152, 0);
     border: 1px solid rgba(44, 65, 100, 0);
 }
+
+@media screen and (min-width: 720px) and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 720px) {
+    .cursor-dot,
+    .cursor-dot-outline {
+        display: none;
+    }
+}

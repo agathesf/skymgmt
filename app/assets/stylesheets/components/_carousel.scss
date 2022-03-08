@@ -47,8 +47,34 @@
 }
 
 @media screen and (max-width: 720px) {
+	div.back {
+		position: absolute;
+		padding: 20px;
+		& a {
+			position: absolute;
+		}
+	}
 	.show-text {
-	    padding: 100px 0px 0px 0px;
-	    width: 350px;
+	    padding: 0px 0px 0px 0px;
+	    width: 100%;
+    	text-align: justify;
+	    margin-bottom: 20px;
+	}
+	.model-name {
+		transform: translate(0%, -50%);
+	}
+	.info-show {
+		flex-direction: column;
+	}
+	.bottom {
+		display: flex;
+	}
+	.inline-show {
+		display: flex;
+		flex-direction: column; 
+		& img {
+			height: 100% !important;
+			padding: 5px 5px;
+		}
 	}
 }
