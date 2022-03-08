@@ -33,7 +33,7 @@ input {
     	}
 }
 
-.new_model {
+.new_model, .edit_model {
 	padding: 90px 270px;
     display: flex;
     &.form-control {
@@ -133,7 +133,7 @@ input {
 ///////// RESPONSIVE //////////
 
 @media screen and (min-width: 720px) and (max-width: 1200px) {
-	.new_model {
+	.new_model, .edit_model {
 		padding: 90px 120px;
 	    display: block;
 	}
@@ -146,7 +146,7 @@ input {
 }
 
 @media screen and (max-width: 720px) {
-	.new_model {
+	.new_model, .edit_model {
 		padding: 20px 20px;
 	    display: block;
 	}

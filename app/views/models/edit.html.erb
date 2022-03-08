@@ -1,7 +1,7 @@
 <%= simple_form_for @model do |f| %>
 
 	<div class="form-side form-left">
-		<%= link_to models_path do %>
+		<%= link_to model_path(@model) do %>
 			<p><i class="fas fa-chevron-left pr-2"></i>annuler</p>
 		<% end %>
 
@@ -82,6 +82,11 @@
 
 		<%= f.input :photos, as: :file, input_html: { multiple: true }, label:false %>
 		<div class="preview">
+			<ul>
+				<% @model.photos.each do |photo| %>
+					<li> <%= cl_image_tag photo.key, style: "height: 85vh" %> </li>
+				<% end %>
+			</ul>
 		</div>
 
 	  	<%= f.button :submit, value: "valider", class: "validate-model-btn" %>
