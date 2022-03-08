@@ -52,7 +52,16 @@
 		  	<% @models.each do |model| %>
 		  		<% if model.category == "new faces" %>
 			  		<div class="modal-content-index-line py-2">
-			  			<p class="c2"> <%= model.first_name%> <%= model.last_name %></p>
+			  			<p class="c2"> <%= model.first_name%> <%= model.last_name %> 
+			  				<span class="c0"> 
+			  					(
+			  					<%= "F" if model.gender == "female" %> 
+			  					<%= "M" if model.gender == "male" %>
+			  					|
+			  					<%= model.age %>
+			  					)
+			  				</span>
+			  			</p>
 			  			<p class="c3"> 
 			  				<%= "F" if model.gender == "female" %> 
 			  				<%= "M" if model.gender == "male" %>
@@ -80,8 +89,17 @@
 
 	  	  		<% if model.category == "talents" %>
 	  		  		<div class="modal-content-index-line py-2">
-			  			<p class="c2"> <%= model.first_name%> <%= model.last_name %></p>
-			  			<p class="c3"> 
+	  		  			<p class="c2"> <%= model.first_name%> <%= model.last_name %> 
+	  		  				<span class="c0"> 
+	  		  					(
+	  		  					<%= "F" if model.gender == "female" %> 
+	  		  					<%= "M" if model.gender == "male" %>
+	  		  					|
+	  		  					<%= model.age %>
+	  		  					)
+	  		  				</span>
+	  		  			</p>
+	  		  			<p class="c3"> 
 			  				<%= "F" if model.gender == "female" %> 
 			  				<%= "M" if model.gender == "male" %>
 			  			</p>

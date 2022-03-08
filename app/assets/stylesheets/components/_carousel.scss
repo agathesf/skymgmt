@@ -3,7 +3,7 @@
 	font-family: $my-font;
 	font-size: 12px;
 	text-transform: uppercase;
-	margin: 45px 10px;
+	margin: 0px;
 }
 
 .inline-show img {
@@ -42,7 +42,7 @@
 @media screen and (min-width: 720px) and (max-width: 1200px) {
 	.inline-show img {
 		padding: 0 5px;
-		height: 80vh;
+		height: 85vh;
 	}
 }
 
@@ -55,7 +55,7 @@
 		}
 	}
 	.show-text {
-	    padding: 0px 0px 0px 0px;
+	    padding: 45px 0px 0px 0px;
 	    width: 100%;
     	text-align: justify;
 	    margin-bottom: 20px;
@@ -76,5 +76,10 @@
 			height: 100% !important;
 			padding: 5px 5px;
 		}
+	}
+	.column-wrapper {
+		display: block !important;
+		height: 100%;
+    	position: inherit !important;
 	}
 }
