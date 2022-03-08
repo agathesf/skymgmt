@@ -101,6 +101,10 @@ $modal-backdrop-opacity: 0.1;
 	border-bottom: 0px solid black;
 }
 
+.c0 {
+	display: none;
+}
+
 // .c2 {
 // 	grid-column: 2 / 2;
 // }
@@ -111,4 +115,41 @@ $modal-backdrop-opacity: 0.1;
 
 .login:hover {
 	text-decoration: underline !important;
+}
+
+///////// RESPONSIVE //////////
+
+@media screen and (min-width: 720px) and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 720px) {
+	.modal-content {
+	    grid-template-columns: 1fr;
+	    grid-gap: 5px;
+	}
+	.modal-right {
+		margin-bottom: 40px;
+	}
+	.login {
+		position: inherit !important;
+	}
+	.asset {
+	    grid-template-columns: 1fr;
+	}
+	.modal-content-index {
+		grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+		& .c1, .c5 {
+			display:none;
+		}
+	}
+	.modal-content-index-line {
+		margin-left: 0px; 
+		& .c1, .c5 {
+			display:none;
+		}
+	}
+	.c0 {
+		display: block;
+		margin-bottom: 10px;
+	}
 }
