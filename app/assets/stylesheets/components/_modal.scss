@@ -30,13 +30,16 @@ $modal-backdrop-opacity: 0.1;
 
 .modal-content {
 	    background-color: $light-gray;
-	    display: grid;
-	    grid-template-columns: 1fr 1fr;
-	    grid-gap: 50px;
 	        border: 0px solid rgba(0, 0, 0, 0.2);
 	        text-align: justify;
 	        height: 100%;
     overflow: scroll;
+}
+
+.modal-content-about {
+	display: grid;
+	    grid-template-columns: 1fr 1fr;
+	    grid-gap: 50px;
 }
 
 .close-btn {
@@ -57,7 +60,7 @@ $modal-backdrop-opacity: 0.1;
 	line-height: 1.5;
 }
 
-.modal-dialog a {
+.modal-dialog .login {
 	text-align: end;
 }
 
