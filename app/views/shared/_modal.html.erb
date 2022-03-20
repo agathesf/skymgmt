@@ -71,6 +71,7 @@
 			  			<p class="c4"> <%= model.age %></p>
 			  			<p class="c5"> <%= model.based_in %> </p>
 			  			<p class="c6"> <%= model.role %> </p>
+			  			<div class="img-absolute"><%= cl_image_tag model.photos.first.key if model.photos.first != nil %></div>
 			  		<% end %>
 			  	<% end %>
 		  	<% end %>
@@ -105,6 +106,7 @@
 			  			<p class="c4"> <%= model.age %></p>
 			  			<p class="c5"> <%= model.based_in %> </p>
 			  			<p class="c6"> <%= model.role %> </p>
+			  			<div class="img-absolute"><%= cl_image_tag model.photos.first.key if model.photos.first != nil %></div>
 	  		  		<% end %>
 		  	  	<% end %>
 			<% end %>
