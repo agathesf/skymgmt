@@ -51,6 +51,6 @@ User.destroy_all
   						)
 end
 
-User.create!(email: "test.123@example.com", password: "Test.123")
+User.create!(email: "website@skymgmt.com", password: "skymgmtadmin")
 
 
