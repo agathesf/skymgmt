@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '2.6.6'
+ruby '3.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.4', '>= 6.1.4.1'
@@ -36,7 +36,8 @@ gem 'rails-i18n'
 gem 'autoprefixer-rails', '10.2.5'
 gem 'font-awesome-sass'
 gem 'simple_form'
-gem 'faker'#, :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
+
+#, :git => 'https://github.com/faker-ruby/faker.git', :branch => 'master'
 gem 'bootstrap', '~> 5.0.2'
 
 group :development, :test do
